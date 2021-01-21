@@ -14,11 +14,11 @@ Problems it solves is that in a monolithic application all teams even they have 
 
 ## Spring Boot & Spring Cloud
 
-Spring Boot is the response from the Spring team to the monolithic -> microservice migration, Sprint Boot basically strips down all the "entrerprise" features found in Spring and it just provides the features geared towards a Java Rest Oriented application.
+Spring Boot is the response from the Spring team to the monolithic -> microservice migration, Sprint Boot basically strips down all the "**entrerprise**" features found in Spring and it just provides the features geared towards a Java Rest Oriented application.
 
 Spring Cloud on the other side wraps several popular cloud-management microservice frameworks under a common framework and makes them easy to use on your application by just using annotations.
 
-##Spring microservice request flow
+## Spring microservice request flow
 - Client sends HTTP request 
 - **Spring Boot** will parse the request and map to a route based on the verb, parameters, URL to a method in a **Spring RestController** class
 - Give route method params received.
