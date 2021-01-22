@@ -29,4 +29,8 @@ Spring Cloud on the other side wraps several popular cloud-management microservi
 
 Spring bood abstracts away the common REST microservice task and lets developers focus on business logic for the service.
 
+## Our first Microservice "Hello World"
+
+For this first Microservice we will just create a simple hello world application which will output the first name and lastname provided as path parameters in the URL.
+
 
