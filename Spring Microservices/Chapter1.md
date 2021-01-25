@@ -49,18 +49,18 @@ Let's talk about a little on what the code is doing here and what each annotatio
 
 **@PathVariable("firstName") String firstName**, this line in the method parameters takes care of grabing path variables from the endpoint and mapping them as a parameter.
 
-###All good and everything but, how do we run this code??
+### All good and everything but, how do we run this code??
 
 ```mvn spring-boot:run``` This command will use a Spring Boot plug-in to start rhe application using an embedded Tomcat server!!
 
 
-##Why change the way we build applications?
+## Why change the way we build applications?
 - **Complexity has gone way up** (today applications need to talk to multiple services)
 - **Customers want faster delivery** (features delivered as fast as possible)
 - **Performance and scalability** (scale up quickly based on volume and down when needs passed)
 - **Applications should be available** (Highly resilient applications)
 
 
-###What do we get if we move to microsercives?
+### What do we get if we move to microsercives?
 
 
