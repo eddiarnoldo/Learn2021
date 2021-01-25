@@ -36,4 +36,31 @@ For this first Microservice we will just create a simple hello world application
 
 - [Code of Hello World](https://github.com/eddiarnoldo/Learn2021/blob/main/Spring%20Microservices/chapter1-code/demo/src/main/java/com/example/demo/HelloworldApplication.java)
 
-[Pending to add notes of what's happening in that file]
+Let's talk about a little on what the code is doing here and what each annotation gives us. (See code sample first)
+
+
+**@SpringBootApplication**, this annotation tells Spring Boot that the class with this annotation is the entry point for our service.
+
+**@RestController**, is what tells Springs that this class will expose code as a Spring Rest controller (GET/POST/PUT/DELETE). 
+
+**@RequestMapping(value="hello")**, this will make that every single URLs exposed under this class start with the ```/hello``` prefix.
+
+**@RequestMapping(value="/{firstName}/{lastName}", method=RequesrtMethod.GET)**, this will expose an endpoint which will be a GET-based REST endpoint and it will receive 2 path variables 
+
+**@PathVariable("firstName") String firstName**, this line in the method parameters takes care of grabing path variables from the endpoint and mapping them as a parameter.
+
+###All good and everything but, how do we run this code??
+
+```mvn spring-boot:run``` This command will use a Spring Boot plug-in to start rhe application using an embedded Tomcat server!!
+
+
+##Why change the way we build applications?
+- **Complexity has gone way up** (today applications need to talk to multiple services)
+- **Customers want faster delivery** (features delivered as fast as possible)
+- **Performance and scalability** (scale up quickly based on volume and down when needs passed)
+- **Applications should be available** (Highly resilient applications)
+
+
+###What do we get if we move to microsercives?
+
+
