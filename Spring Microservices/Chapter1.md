@@ -72,9 +72,23 @@ Small, simple and decoupled services = Scalable, Resilient and Flexible applicat
 
 --- 
 
-##What is the cloud?
+## Cloud Based computing models
+- Infrastructure as a Service (IaaS)
+- Platform as a Service (PaaS)
+- Software as a Service (SaaS)
+- Function as a Service (FaaS)
+- Container as a Service (CaaS)
 
 
+Pending to add image !
 
+### Infrastructure as a Service (IaaS)
+Cloud vendor provides the infrastructure but you're responsible of selecting the technology and buiding the final solution. (AWS EC2, Rackspace, Google Compute Engine (GCE))
+
+### Platform as a Service (PaaS)
+Cloud vendor provides technology we just need to provide the application and data. (AWS Elastic Beanstalk, Heroku, Windows Azure)
+
+
+### WIP
 
 
