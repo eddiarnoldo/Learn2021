@@ -63,4 +63,18 @@ Let's talk about a little on what the code is doing here and what each annotatio
 
 ### What do we get if we move to microsercives?
 
+- **Flexible**: Smaller unit of code, less time to deploy
+- **Resilient**: Localized failures and easier to contain
+- **Scalable**: Scale horizontally instead of scalling a whole monolith 
+
+----
+Small, simple and decoupled services = Scalable, Resilient and Flexible applications
+
+--- 
+
+##What is the cloud?
+
+
+
+
 
