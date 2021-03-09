@@ -80,15 +80,61 @@ Small, simple and decoupled services = Scalable, Resilient and Flexible applicat
 - Container as a Service (CaaS)
 
 
-Pending to add image !
+![Cloud Infrastructure](https://www.bigcommerce.com/blog/wp-content/uploads/2018/10/saas-vs-paas-vs-iaas-breakdown.jpg)
 
 ### Infrastructure as a Service (IaaS)
-Cloud vendor provides the infrastructure but you're responsible of selecting the technology and buiding the final solution. (AWS EC2, Rackspace, Google Compute Engine (GCE))
+Cloud vendor provides the infrastructure but you're responsible of selecting the technology and buiding the final solution.
+
+- AWS EC2
+- Rackspace
+- Google Compute Engine (GCE)
 
 ### Platform as a Service (PaaS)
-Cloud vendor provides technology we just need to provide the application and data. (AWS Elastic Beanstalk, Heroku, Windows Azure)
+Cloud vendor provides technology we just need to provide the application and data. 
+
+- AWS Elastic Beanstalk
+- Heroku
+- Windows Azure
 
 
-### WIP
+### Software as a Service (SaaS)
+Passive consumer with no input on the technology selection on any accountability of the infrastructure of the application. 
+
+- Google Workspace
+- Dropbox
+- Concur
+
+### Function as a Service (FaaS)
+Deploy applications as serverless chunks of code, with this approach you don't have to manage any infrastructure (just pay for the computing cycles required to execute your function)
+
+- Amazon's Lambda
+- Google Cloud functions
+
+### Containter as a Service (CaaS)
+As as developer you just build your microservice as a portable virtual container suck as Docker and ship that to your cloud provider to execute in a virtual container.
+
+- Amazon's Elastic Container Service
 
 
+## Why IaaS is will be used for this book?
+### Simplified infrastucture management
+- It allows the most control over your services
+- New services can be started with just API calls
+- Pay only for infrastructure used
+
+### Massive horizontal scalability
+- Can quickly start one or more instances of a service
+
+### High redundancy through geographic distribution
+- IaaS has multiple data center rather than using just a single cuslter in a data center
+
+
+
+##Microservices main attributes:
+###Right Sized
+Need to make sure that your microservices is either not to big so it takes too much responsibility and allows faster changes to prevent affecting a whole application
+
+### Location transparent
+How to manage physical location of a service? Can new services be added and removed without impacting clients?
+
+# WIP!!!
