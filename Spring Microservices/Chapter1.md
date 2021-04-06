@@ -136,3 +136,6 @@ As as developer you just build your microservice as a portable virtual container
 - **Resilent**: Routing on failings services, Fail fast!
 - **Repeatable**: Every new instance same code and configs
 - **Scalable**: Async & events to minimize dependecies and scale
+
+
+[Detour - Microservice attributes into design patterns!!]()
