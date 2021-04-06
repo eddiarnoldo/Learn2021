@@ -130,11 +130,9 @@ As as developer you just build your microservice as a portable virtual container
 
 
 
-##Microservices main attributes:
-###Right Sized
-Need to make sure that your microservices is either not to big so it takes too much responsibility and allows faster changes to prevent affecting a whole application
-
-### Location transparent
-How to manage physical location of a service? Can new services be added and removed without impacting clients?
-
-# WIP!!!
+## Microservices main attributes:
+- **Right Sized**: Focused on one area of responsibility
+- **Location transparent**: Manage physical location start and shutdown instances
+- **Resilent**: Routing on failings services, Fail fast!
+- **Repeatable**: Every new instance same code and configs
+- **Scalable**: Async & events to minimize dependecies and scale
