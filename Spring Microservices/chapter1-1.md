@@ -39,6 +39,7 @@ Prevent problem on single service to cascade to consumers.
 
 - **Fallback pattern**: When it fails provide a plug-in
 	- Provide plug-ins to try to carry out its work through alternative means
+
 - **Bulkhead pattern**: How to segregate calls on resources
 	-  Prevent mis-behavior of one service to impact rest of application
 
@@ -46,7 +47,7 @@ Prevent problem on single service to cascade to consumers.
 - **Authentication**: Determine trusted clients
 - **Authorization**: Validate if clients can perform actions
 - **Credential management & propagation**: Prevent a client to constantly present their credentials
-	-  OAuth2, JWT
+	-  *OAuth2, JWT*
 
 ## Logging & Tracing
 Difficult logging and debug so need to follow patterns

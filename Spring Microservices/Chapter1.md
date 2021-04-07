@@ -139,3 +139,86 @@ As as developer you just build your microservice as a portable virtual container
 
 
 [Detour - Microservice attributes into design patterns!!](https://github.com/eddiarnoldo/Learn2021/blob/main/Spring%20Microservices/chapter1-1.md)
+
+## Microservice build/deployment patterns
+Each instance of a microservice should be identical. Cannot allow "Configuration Drift".
+
+-	Immutable infrastructure - ***once a service is deployed the infrastructure it's running on is never touched again by human hands***.
+
+
+Goal is to integrate configuration of infrastructure right into the build-deployment process (no WAR/EAR) instead use virtual server images. 
+***Microservices and servers they run deployed as a single unit!***
+
+### Patterns:
+- **Buid and deployment pipeline**: How to create a repeatable build process, one button builds.
+- **Infrastructure as code**: Provisioning of services as code, source control
+	- Run tests for our microservices.
+	- Once compiled and packed provide a virtual server with it installed.
+
+- **Immutable servers**: Once image is created how to ensure it never changes after deployed.
+	- Once image is created no-one should access it.
+	- Envs started with env specific variables.
+
+- **Phoenix servers**: Torn down server regularly, prevent configuration drift.
+
+
+## Using Spring Cloud to build microservices
+
+Wraps the work of open source companies as Pivotal, HashiCorp and Netflix for patterns.
+
+### Development patterns:
+- **Spring Boot**: Core microservice
+	- Simplifies building REST microservices
+	- Serialization from Java to JSON
+
+- **Spring Cloud Config**: Config management
+	- Manages configuration thru a centralized service, own property management repo but integrates with (Git, Consul, Eureka)
+
+	
+- **Spring Cloud Stream**:  Async messaging
+	- Allows to integrate lightweight message processing into your service (WIP) 
+
+### Routing patterns:
+- **Spring Cloud / Netflix Eureka**: Service discovery patterns 
+- **Spring Cloud / Netflix Zuul**: Service Routing patterns
+
+***Spring Cloud + Eureka/Consul*** allows you to abstract IP address of services (Consume thru a logical name instead of an address), can be implemented using Eureka/Consul as it's discovery engines
+
+**Spring Cloud + Zuul** Zuul is a service gateway that makes sure all calls to your service are through a front door which later allows to enforce service policies and security.
+
+### Client resiliency patterns:
+- **Spring Cloud / Netflix Ribbon**: Client side load balancing
+- **Spring Cloud / Netflix Hystrix**: Circuit breaker pattern
+- **Spring Cloud / Netflix Hystrix**: Fallback pattern
+- **Spring Cloud / Netflix Hystrix**: Bulkhead pattern
+
+
+### Build deployment patterns:
+- **Continuous integration**: Travis CI
+- **Infrastructure as Code**: Docker
+- **Immutable servers**: Docker
+- **Phoenix servers**: Travis CI / Docker
+
+### Logging patterns
+- **Log correlation**: Spring Cloud Sleuth
+- **Log aggregation**: Spring Cloud Sleuth / Papertrail
+- **Microservice traicing**: Spring Cloud Sleuth/Zipkin
+
+### Security
+- **Authorization**: Spring Cloud Security / OAuth2
+- **Authentication**: Spring Cloud Security / OAuth2
+- **Credential management and propagation**: Spring Cloud Security / OAuth2 / JWT
+
+
+
+
+
+
+
+
+
+
+
+
+
+
