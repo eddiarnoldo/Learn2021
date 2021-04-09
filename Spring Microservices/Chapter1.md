@@ -172,11 +172,13 @@ Wraps the work of open source companies as Pivotal, HashiCorp and Netflix for pa
 	- Serialization from Java to JSON
 
 - **Spring Cloud Config**: Config management
-	- Manages configuration thru a centralized service, own property management repo but integrates with (Git, Consul, Eureka)
+	- Manages configuration thru a centralized service, own property management repo but integrates with (Git, Consul, Eureka ***this last two are here since they have key-value DBs***)
 
 	
 - **Spring Cloud Stream**:  Async messaging
 	- Allows to integrate lightweight message processing into your service (WIP) 
+
+---
 
 ### Routing patterns:
 - **Spring Cloud / Netflix Eureka**: Service discovery patterns 
@@ -186,12 +188,17 @@ Wraps the work of open source companies as Pivotal, HashiCorp and Netflix for pa
 
 **Spring Cloud + Zuul** Zuul is a service gateway that makes sure all calls to your service are through a front door which later allows to enforce service policies and security.
 
+---
+
 ### Client resiliency patterns:
 - **Spring Cloud / Netflix Ribbon**: Client side load balancing
 - **Spring Cloud / Netflix Hystrix**: Circuit breaker pattern
 - **Spring Cloud / Netflix Hystrix**: Fallback pattern
 - **Spring Cloud / Netflix Hystrix**: Bulkhead pattern
 
+**Ribbon** allows easy integrating with service discovery agents such as Eureka while it also provides client side load balancing which allows clients to continue making service calls even if service discovery is unavailable
+
+---
 
 ### Build deployment patterns:
 - **Continuous integration**: Travis CI
@@ -199,15 +206,35 @@ Wraps the work of open source companies as Pivotal, HashiCorp and Netflix for pa
 - **Immutable servers**: Docker
 - **Phoenix servers**: Travis CI / Docker
 
+---
+
 ### Logging patterns
 - **Log correlation**: Spring Cloud Sleuth
 - **Log aggregation**: Spring Cloud Sleuth / Papertrail
 - **Microservice traicing**: Spring Cloud Sleuth/Zipkin
 
+**Sleuth** allows you to integrate unique tracking identifiers into HTTP calls and message chanles (RabbitMQ, Kafka), this trace IDs are automatically added to any log statement.
+
+***Papertrail*** cloud based loggin platform
+***Open Zipkin*** consumes Sleuth data and allows visualization of flow for a single transaction
+
+---
+
 ### Security
 - **Authorization**: Spring Cloud Security / OAuth2
 - **Authentication**: Spring Cloud Security / OAuth2
 - **Credential management and propagation**: Spring Cloud Security / OAuth2 / JWT
+
+***Spring Cloud Security*** token-based, allows server to communicate through a token issued by an authentication server, each service receiving a call can validate the token, suppots JWT which is a framework that standardizes OAuth2.
+
+##How does our HelloWorld would look with all this cool stuff?
+# WIP 
+
+```java
+
+```
+
+
 
 
 
