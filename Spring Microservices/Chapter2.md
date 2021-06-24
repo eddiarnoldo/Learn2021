@@ -1,1 +1,1 @@
-# Chapter 2 - Building Mircorservices with Spring Boot
+# Chapter 2 - Building Microservices with Spring Boot
