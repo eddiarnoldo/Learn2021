@@ -17,10 +17,10 @@ Basics of building a microservice.
 
 	
 ## Routing patterns
-Consume microservices, abstract IP address, single point of entry, ensure secutiry and content policies.
+Consume microservices, abstract IP address, single point of entry, ensure security and content policies.
 
 - **Service discovery**: Abstract physical location
-	- Could find the microservice without hardcoded location
+	- Make it possible to find the microservice without a hardcoded location
 	- Remove misbehaving services from pool
 
 - **Service routing**: Single logical URL

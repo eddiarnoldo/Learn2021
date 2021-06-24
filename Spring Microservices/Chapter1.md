@@ -3,10 +3,10 @@ The contept fo the microservice started in the year of 2014 and it was a respons
 
 Microservices are **small, loosely coupled, distributed services**.
 
-Problems it solves is that in a monolithic application all teams even they have they own areas and responsibilities they all share a single code base and every small change needs the full application to be regressed, compiled, deployed, etc.
+Problems it solves is that in a monolithic application all teams share a single code base and every small change needs the full application to be regressed, compiled, deployed, etc.
 
 ## Characteristics of a microservice architecture:
-- Appplication logic is broken into small-grained components
+- Application logic is broken into small-grained components
 - Each component has it's own domain (should be reusable)
 - They communicate using HTTP, JSON, etc
 - The technical implementation of each service is irrelevant as they comunicate using a single mechanism
@@ -88,6 +88,7 @@ Cloud vendor provides the infrastructure but you're responsible of selecting the
 - AWS EC2
 - Rackspace
 - Google Compute Engine (GCE)
+- Oracle OCI
 
 ### Platform as a Service (PaaS)
 Cloud vendor provides technology we just need to provide the application and data. 
@@ -111,7 +112,7 @@ Deploy applications as serverless chunks of code, with this approach you don't h
 - Google Cloud functions
 
 ### Containter as a Service (CaaS)
-As as developer you just build your microservice as a portable virtual container suck as Docker and ship that to your cloud provider to execute in a virtual container.
+As as developer you just build your microservice as a portable virtual container such as Docker and ship that to your cloud provider to execute in a virtual container.
 
 - Amazon's Elastic Container Service
 
@@ -138,7 +139,7 @@ As as developer you just build your microservice as a portable virtual container
 - **Scalable**: Async & events to minimize dependecies and scale
 
 
-[Detour - Microservice attributes into design patterns!!](https://github.com/eddiarnoldo/Learn2021/blob/main/Spring%20Microservices/chapter1-1.md)
+##[Chapter 1-1 - Microservice attributes into design patterns!!](https://github.com/eddiarnoldo/Learn2021/blob/main/Spring%20Microservices/chapter1-1.md)
 
 ## Microservice build/deployment patterns
 Each instance of a microservice should be identical. Cannot allow "Configuration Drift".
@@ -227,14 +228,17 @@ Wraps the work of open source companies as Pivotal, HashiCorp and Netflix for pa
 
 ***Spring Cloud Security*** token-based, allows server to communicate through a token issued by an authentication server, each service receiving a call can validate the token, suppots JWT which is a framework that standardizes OAuth2.
 
-##How does our HelloWorld would look with all this cool stuff?
-# WIP 
-
-```java
-
-```
+### Provisioning
+- **Use of Travis CI**
+- **Docker**
 
 
+## Summary
+- Microservices are small pieces of functionality that are responsible for one specific area of scope
+- No industry standard for microservices
+- Writing microservices is easy, but fully operatioanalizing requires additional forethought. 
+- Microservices are language-agnostic
+- Spring Boot is used to simplify building of REST based/JSON microservices
 
 
 
