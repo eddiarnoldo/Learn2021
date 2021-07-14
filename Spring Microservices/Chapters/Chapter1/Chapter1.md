@@ -34,7 +34,7 @@ Spring bood abstracts away the common REST microservice task and lets developers
 For this first Microservice we will just create a simple hello world application which will output the first name and lastname provided as path parameters in the URL.
 
 
-- [Code of Hello World](https://github.com/eddiarnoldo/Learn2021/blob/main/Spring%20Microservices/chapter1-code/demo/src/main/java/com/example/demo/HelloworldApplication.java)
+- [Code of Hello World](https://github.com/eddiarnoldo/Learn2021/blob/main/Spring%20Microservices/Chapters/Chapter1/chapter1-code/demo/src/main/java/com/example/demo/HelloworldApplication.java)
 
 Let's talk about a little on what the code is doing here and what each annotation gives us. (See code sample first)
 
@@ -139,7 +139,7 @@ As as developer you just build your microservice as a portable virtual container
 - **Scalable**: Async & events to minimize dependecies and scale
 
 
-##[Chapter 1-1 - Microservice attributes into design patterns!!](https://github.com/eddiarnoldo/Learn2021/blob/main/Spring%20Microservices/chapter1-1.md)
+##[Chapter 1-1 - Microservice attributes into design patterns!!](https://github.com/eddiarnoldo/Learn2021/blob/main/Spring%20Microservices/Chapters/Chapter1/chapter1-1.md)
 
 ## Microservice build/deployment patterns
 Each instance of a microservice should be identical. Cannot allow "Configuration Drift".
