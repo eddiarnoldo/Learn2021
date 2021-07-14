@@ -19,6 +19,7 @@
 - **Independent**: Compiled/Tested/Deployed independently
 
 ## Cloud based applications characteristics
+
 - **Large and diverse user base**
 	- Different customers want different features
 	- Features can be delivered quickly
@@ -73,5 +74,20 @@ The presence of two data domain is a good indicator that multiple services are a
 
 How the two interact usually becomes the service interface.
  
+#### Guidelines for identifying & decomposing business problem
+
+- Describe the business problem, and the listen to the nouns you're using.
+
+	> Example in Eagle Eye: *contracts* , *licenses*, *assets*
+	
+- Pay attention to the verbs
+
+	> When Mike from desktop services is setting up a new PC, he ***looks*** up the number of licenses available, installs the software. He then ***updates*** the number of licenses used in his tracking spreadsheet.
+	
+- Look for data cohesion
+	
+	> Microservices should completely own their data
+
+
 
  
