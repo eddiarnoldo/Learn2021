@@ -88,6 +88,8 @@ How the two interact usually becomes the service interface.
 	
 	> Microservices should completely own their data
 
+<img src="https://github.com/eddiarnoldo/Learn2021/blob/main/Spring%20Microservices/Chapters/Chapter2/Images/Chapter2/chapter-2-nouns.png" alt="drawing" width="200"/>
+
 
 
  
