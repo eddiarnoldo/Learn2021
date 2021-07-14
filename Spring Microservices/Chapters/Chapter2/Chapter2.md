@@ -87,8 +87,17 @@ How the two interact usually becomes the service interface.
 - Look for data cohesion
 	
 	> Microservices should completely own their data
+	
+	
+> Interview users for EagleEye
 
-<img src="https://github.com/eddiarnoldo/Learn2021/blob/main/Spring%20Microservices/Chapters/Chapter2/Images/Chapter2/chapter-2-nouns.png" alt="drawing" width="200"/>
+
+<img src="https://github.com/eddiarnoldo/Learn2021/blob/main/Spring%20Microservices/Chapters/Chapter2/Images/Chapter2/chapter-2-interview.png" alt="drawing" width="500px"/>
+
+
+> Nouns for Eagle Eye
+
+<img src="https://github.com/eddiarnoldo/Learn2021/blob/main/Spring%20Microservices/Chapters/Chapter2/Images/Chapter2/chapter-2-nouns.png" alt="drawing" width="300px"/>
 
 
 
