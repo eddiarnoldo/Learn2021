@@ -87,7 +87,13 @@ How the two interact usually becomes the service interface.
 - Look for data cohesion
 	
 	> Microservices should completely own their data
-	
+
+
+#### Analize Eagle Eye business 
+
+Eagle Eye is the fictional business used along this book which is a software product which manages Software licenses and SSL certificates.
+
+---
 	
 > Interview users for EagleEye
 
@@ -98,6 +104,8 @@ How the two interact usually becomes the service interface.
 > Nouns for Eagle Eye
 
 <img src="https://github.com/eddiarnoldo/Learn2021/blob/main/Spring%20Microservices/Chapters/Chapter2/Images/Chapter2/chapter-2-nouns.png" alt="drawing" width="300px"/>
+
+
 
 
 
