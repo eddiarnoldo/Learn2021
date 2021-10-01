@@ -107,8 +107,10 @@ How the two interact usually becomes the service interface.
 <img src="https://github.com/eddiarnoldo/Learn2021/blob/main/Spring%20Microservices/Chapters/Chapter2/Images/Chapter2/chapter-2-nouns.png" alt="Business Nouns" width="300px"/>
 > **Nouns for Eagle Eye**
 
+
+
 ---
-#### # Establishing service granularity
+#### Establishing service granularity
 ---
 
 Taking previous analysis in consideration we can see potentially 4 microservices:
@@ -123,8 +125,24 @@ Taking previous analysis in consideration we can see potentially 4 microservices
 <img src="https://github.com/eddiarnoldo/Learn2021/blob/main/Spring%20Microservices/Chapters/Chapter2/Images/Chapter2/chapter-2-DB-split.png" alt="Database microservice split approach" width="500px"/>
 > **Database split into microservice approach**
 
+When building a microservice you often start thinking if you achieved the right level of granularity and here are a couple of concepts that probably can help you answer this type of question:
+
+- **Start broad and refactor to smaller services** (*we don't want to get to the level of only just fine grained data services*)
+- **Focus first on how your services will interact between themselves**
+- **Service responsibilities will change overtime as your understading of the problem domain grows** (Your original microservice may gain more responsibility over time and by new requirements and it can grow into different services rendering the original service into an orchestration layer for this new services)
 
 
+#### Smells of a bad microservice
+- **Too many responsibilities**
+- **The service is managing data across a large number of tables**
+- **Too many test cases**
+
+
+#### Too fine-grained smells
+- **Microservices breed like rabbits** *(Each service just talks to a single database table)*
+- **Your services are heavily independent on one another** (Keep calling back and forth)*
+- **Collection of simple CRUD** *(microservices are an expression of business logic and not an abstraction layer of datasources)*
+	
 
 
 
