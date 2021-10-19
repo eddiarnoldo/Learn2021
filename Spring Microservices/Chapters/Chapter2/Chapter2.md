@@ -120,9 +120,10 @@ Taking previous analysis in consideration we can see potentially 4 microservices
 - Contract
 - Organization
 
-> Extracting services into microservices involves more than splitting code into separate projects it also involves teasing out the actual database tables.
+Extracting services into microservices involves more than splitting code into separate projects it also involves teasing out the actual database tables.
 
 <img src="https://github.com/eddiarnoldo/Learn2021/blob/main/Spring%20Microservices/Chapters/Chapter2/Images/Chapter2/chapter-2-DB-split.png" alt="Database microservice split approach" width="500px"/>
+<<<<<<< Updated upstream
 > **Database split into microservice approach**
 
 When building a microservice you often start thinking if you achieved the right level of granularity and here are a couple of concepts that probably can help you answer this type of question:
@@ -143,7 +144,31 @@ When building a microservice you often start thinking if you achieved the right 
 - **Your services are heavily independent on one another** (Keep calling back and forth)*
 - **Collection of simple CRUD** *(microservices are an expression of business logic and not an abstraction layer of datasources)*
 	
+=======
 
+
+When building a microservice the question about granularity is important here are some tips on how to deal with that:
+
+> A microservice that’s too coarse- or fine-grained will have a number of telltale attributes that we’ll discuss shortly
+
+- ***It’s better to start broad with your microservice and refactor to smaller services*** (Don't get down to only data services)
+
+
+- ***Focus first on how your services will interact with one another*** (It’s easier to refactor from being too coarse-grained to being too fine-grained.)
+
+- ***Service responsibilities will change over time as your understanding of the problem domain grows*** (What starts as a single microservice might grow into multiple services, with the original microservice acting as an orchestration layer for these new services)
+
+> Too coarse-grained
+> 
+> - Too many responsibilities
+> - Managing data accross a large number of tables
+> - Too many test cases
+
+> Too fine-grained
+> 
+> - Domain breed like rabbits
+> - Heavily interdependent between on one another
+> - Collection of simple CRUD
 
 
 
