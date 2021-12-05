@@ -143,6 +143,7 @@ When building a microservice you often start thinking if you achieved the right 
 - **Microservices breed like rabbits** *(Each service just talks to a single database table)*
 - **Your services are heavily independent on one another** (Keep calling back and forth)*
 - **Collection of simple CRUD** *(microservices are an expression of business logic and not an abstraction layer of datasources)*
+<<<<<<< Updated upstream
 	
 =======
 
@@ -170,6 +171,38 @@ When building a microservice the question about granularity is important here ar
 > - Heavily interdependent between on one another
 > - Collection of simple CRUD
 
+
+=======
+
+
+> A microservices architecture should be developed with a evolutionary thought process. Take a pragmatic approach and deliver, rathien than trying to get a perfect design.
+
+
+#### Talking to another microservice
+- Embrace the REST phylosophy
+- Use URI's to communicate intent
+- Use JSON RQ/RS
+- Use HTTP status code to communicate results
+>>>>>>> Stashed changes
+
+
+---
+#### When not to use microservices!!
+---
+
+##### Complexity building distributed systems
+- New level of complexity to our applications
+- Require a high degree of operational maturity
+
+
+##### Virtual server / container sprawl
+- Microservice instances can growth quickly, have this in mind as the manage and monitor is way larger
+
+
+##### Application type
+- Microservice maybe are not worth it if you're building small (geared towards larger companies to provide scalability and resiliency)
+
+##### Data transactions and consistency
 
 
 
